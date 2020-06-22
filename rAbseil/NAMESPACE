@@ -1,0 +1,3 @@
+useDynLib(rAbseil, .registration=TRUE)
+export("rcpp_hello_world")
+importFrom(Rcpp, evalCpp)
