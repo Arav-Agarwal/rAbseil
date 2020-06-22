@@ -1,0 +1,59 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_014d9/fast"
+make[1]: Entering directory '/home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_014d9.dir/build.make CMakeFiles/cmTC_014d9.dir/build
+make[2]: Entering directory '/home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_014d9.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -fPIE   -o CMakeFiles/cmTC_014d9.dir/CheckSymbolExists.cxx.o -c /home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_014d9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_014d9.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_014d9.dir/CheckSymbolExists.cxx.o  -o cmTC_014d9 
+CMakeFiles/cmTC_014d9.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_014d9.dir/build.make:97: recipe for target 'cmTC_014d9' failed
+make[2]: *** [cmTC_014d9] Error 1
+make[2]: Leaving directory '/home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_014d9/fast' failed
+make[1]: *** [cmTC_014d9/fast] Error 2
+make[1]: Leaving directory '/home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp'
+
+File /home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_49e08/fast"
+make[1]: Entering directory '/home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_49e08.dir/build.make CMakeFiles/cmTC_49e08.dir/build
+make[2]: Entering directory '/home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_49e08.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_49e08.dir/CheckFunctionExists.cxx.o -c /home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_49e08
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49e08.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_49e08.dir/CheckFunctionExists.cxx.o  -o cmTC_49e08 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_49e08.dir/build.make:97: recipe for target 'cmTC_49e08' failed
+make[2]: *** [cmTC_49e08] Error 1
+make[2]: Leaving directory '/home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_49e08/fast' failed
+make[1]: *** [cmTC_49e08/fast] Error 2
+make[1]: Leaving directory '/home/arav/source-ortools/dependencies/sources/abseil-cpp-20200225.2/build_cmake/CMakeFiles/CMakeTmp'
+
+
