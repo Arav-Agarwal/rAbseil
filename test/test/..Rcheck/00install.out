@@ -1,0 +1,19 @@
+* installing *source* package ‘test’ ...
+** using staged installation
+** libs
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/home/arav/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-aGvNeb/r-base-4.0.0=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c RcppExports.cpp -o RcppExports.o
+g++ -std=gnu++11 -I"/usr/share/R/include" -DNDEBUG  -I'/home/arav/R/x86_64-pc-linux-gnu-library/4.0/Rcpp/include'    -fpic  -g -O2 -fdebug-prefix-map=/build/r-base-aGvNeb/r-base-4.0.0=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -g  -c rcpp_hello_world.cpp -o rcpp_hello_world.o
+g++ -std=gnu++11 -shared -L/usr/lib/R/lib -Wl,-Bsymbolic-functions -Wl,-z,relro -o test.so RcppExports.o rcpp_hello_world.o -L/usr/lib/R/lib -lR
+installing to /home/arav/rabseil/test/test/..Rcheck/00LOCK-test/00new/test/libs
+** R
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+** building package indices
+** testing if installed package can be loaded from temporary location
+Error: package or namespace load failed for ‘test’ in namespaceExport(ns, exports):
+ undefined exports: Rcpp.fake.fun
+Error: loading failed
+Execution halted
+ERROR: loading failed
+* removing ‘/home/arav/rabseil/test/test/..Rcheck/test’

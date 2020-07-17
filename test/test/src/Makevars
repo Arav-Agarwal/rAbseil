@@ -1,0 +1,2 @@
+SOURCES = foo.cpp rcpp_hello_world.cpp RcppExports.cpp
+OBJECTS = foo.o rcpp_hello_world.o RcppExports.o

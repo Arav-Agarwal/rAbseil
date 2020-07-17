@@ -1,0 +1,15 @@
+1) Use Rcpp::compileAttributes() to compile the C++ and generate the R code necessary to export to R
+2) Check the NAMESPACE and generate that, if necessary, directly through adding an "export" from the R file
+3) Run "R CMD check <insert folder name here>", which will check various stuff and make sure the package actually works
+4) Run "R CMD build <insert folder name here>", which will create a tar file that we can load into R
+5) Run "R CMD INSTALL <insert tarname here>", which will load functions into our R application, and (barring any difficulties), run the program
+
+
+star) If you need to get a list of some files, try something like the following:
+
+find . -type f -name "*.cc" | grep -vE "test.cc" | cut -c 3-
+
+Here, we do the following:
+    1) Grab filenames with suffix "*.cc"
+    2) Filter out test files, as they are not important for my production build
+    3) Remove the first few characters, so I can copy-paste this into my Makevars ( note to self: generating makevars seems like a decent idea... )

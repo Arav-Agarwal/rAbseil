@@ -1,0 +1,177 @@
+* using log directory ‘/home/arav/rabseil/rAbseil.Rcheck’
+* using R version 4.0.0 (2020-04-24)
+* using platform: x86_64-pc-linux-gnu (64-bit)
+* using session charset: UTF-8
+* checking for file ‘rAbseil/DESCRIPTION’ ... OK
+* checking extension type ... Package
+* this is package ‘rAbseil’ version ‘1.0’
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... WARNING
+Subdirectory ‘rAbseil/src’ contains apparent object files/libraries
+  RcppExports.o rAbseil.so rcpp_hello_world.o
+Object files/libraries should not be included in a source package.
+
+In addition to the above warning(s), found the following notes:
+
+Found the following apparent object files/libraries:
+  src/absl/base/dynamic_annotations.o
+  src/absl/base/internal/cycleclock.o
+  src/absl/base/internal/exponential_biased.o
+  src/absl/base/internal/low_level_alloc.o
+  src/absl/base/internal/periodic_sampler.o
+  src/absl/base/internal/raw_logging.o
+  src/absl/base/internal/scoped_set_env.o
+  src/absl/base/internal/spinlock.o
+  src/absl/base/internal/spinlock_wait.o
+  src/absl/base/internal/sysinfo.o
+  src/absl/base/internal/thread_identity.o
+  src/absl/base/internal/throw_delegate.o
+  src/absl/base/internal/unscaledcycleclock.o
+  src/absl/base/log_severity.o
+  src/absl/container/internal/hashtablez_sampler.o
+  src/absl/container/internal/hashtablez_sampler_force_weak_definition.o
+  src/absl/container/internal/raw_hash_set.o
+  src/absl/debugging/failure_signal_handler.o
+  src/absl/debugging/internal/address_is_readable.o
+  src/absl/debugging/internal/demangle.o
+  src/absl/debugging/internal/elf_mem_image.o
+  src/absl/debugging/internal/examine_stack.o
+  src/absl/debugging/internal/stack_consumption.o
+  src/absl/debugging/internal/vdso_support.o
+  src/absl/debugging/leak_check.o
+  src/absl/debugging/leak_check_disable.o
+  src/absl/debugging/stacktrace.o src/absl/debugging/symbolize.o
+  src/absl/flags/flag.o src/absl/flags/internal/flag.o
+  src/absl/flags/internal/program_name.o
+  src/absl/flags/internal/registry.o
+  src/absl/flags/internal/type_erased.o src/absl/flags/internal/usage.o
+  src/absl/flags/marshalling.o src/absl/flags/parse.o
+  src/absl/flags/usage.o src/absl/flags/usage_config.o
+  src/absl/hash/internal/city.o src/absl/hash/internal/hash.o
+  src/absl/numeric/int128.o src/absl/random/discrete_distribution.o
+  src/absl/random/gaussian_distribution.o
+  src/absl/random/internal/chi_square.o
+  src/absl/random/internal/distribution_test_util.o
+  src/absl/random/internal/gaussian_distribution_gentables.o
+  src/absl/random/internal/pool_urbg.o
+  src/absl/random/internal/randen.o
+  src/absl/random/internal/randen_detect.o
+  src/absl/random/internal/randen_hwaes.o
+  src/absl/random/internal/randen_slow.o
+  src/absl/random/internal/seed_material.o
+  src/absl/random/seed_gen_exception.o src/absl/random/seed_sequences.o
+  src/absl/status/status.o src/absl/status/status_payload_printer.o
+  src/absl/strings/ascii.o src/absl/strings/charconv.o
+  src/absl/strings/cord.o src/absl/strings/escaping.o
+  src/absl/strings/internal/charconv_bigint.o
+  src/absl/strings/internal/charconv_parse.o
+  src/absl/strings/internal/escaping.o
+  src/absl/strings/internal/memutil.o
+  src/absl/strings/internal/ostringstream.o
+  src/absl/strings/internal/pow10_helper.o
+  src/absl/strings/internal/str_format/arg.o
+  src/absl/strings/internal/str_format/bind.o
+  src/absl/strings/internal/str_format/extension.o
+  src/absl/strings/internal/str_format/float_conversion.o
+  src/absl/strings/internal/str_format/output.o
+  src/absl/strings/internal/str_format/parser.o
+  src/absl/strings/internal/utf8.o src/absl/strings/match.o
+  src/absl/strings/numbers.o src/absl/strings/str_cat.o
+  src/absl/strings/str_replace.o src/absl/strings/str_split.o
+  src/absl/strings/string_view.o src/absl/strings/substitute.o
+  src/absl/synchronization/barrier.o
+  src/absl/synchronization/blocking_counter.o
+  src/absl/synchronization/internal/create_thread_identity.o
+  src/absl/synchronization/internal/graphcycles.o
+  src/absl/synchronization/internal/per_thread_sem.o
+  src/absl/synchronization/internal/waiter.o
+  src/absl/synchronization/mutex.o
+  src/absl/synchronization/notification.o src/absl/time/civil_time.o
+  src/absl/time/clock.o src/absl/time/duration.o src/absl/time/format.o
+  src/absl/time/internal/cctz/src/civil_time_detail.o
+  src/absl/time/internal/cctz/src/time_zone_fixed.o
+  src/absl/time/internal/cctz/src/time_zone_format.o
+  src/absl/time/internal/cctz/src/time_zone_if.o
+  src/absl/time/internal/cctz/src/time_zone_impl.o
+  src/absl/time/internal/cctz/src/time_zone_info.o
+  src/absl/time/internal/cctz/src/time_zone_libc.o
+  src/absl/time/internal/cctz/src/time_zone_lookup.o
+  src/absl/time/internal/cctz/src/time_zone_posix.o
+  src/absl/time/internal/cctz/src/zone_info_source.o
+  src/absl/time/time.o src/absl/types/bad_any_cast.o
+  src/absl/types/bad_optional_access.o
+  src/absl/types/bad_variant_access.o
+Object files/libraries should not be included in a source package.
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking whether package ‘rAbseil’ can be installed ... OK
+* checking installed package size ... NOTE
+  installed size is 10.6Mb
+  sub-directories of 1Mb or more:
+    libs  10.5Mb
+* checking package directory ... OK
+* checking DESCRIPTION meta-information ... NOTE
+Checking should be performed on sources prepared by ‘R CMD build’.
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking line endings in C/C++/Fortran sources/headers ... OK
+* checking line endings in Makefiles ... OK
+* checking compilation flags in Makevars ... OK
+* checking for GNU extensions in Makefiles ... OK
+* checking for portable use of $(BLAS_LIBS) and $(LAPACK_LIBS) ... OK
+* checking use of PKG_*FLAGS in Makefiles ... OK
+* checking compiled code ... WARNING
+File ‘rAbseil/libs/rAbseil.so’:
+  Found ‘_ZSt4cerr’, possibly from ‘std::cerr’ (C++)
+    Objects: ‘absl/random/internal/gaussian_distribution_gentables.o’,
+      ‘absl/flags/usage_config.o’
+  Found ‘_ZSt4cout’, possibly from ‘std::cout’ (C++)
+    Objects: ‘absl/random/internal/gaussian_distribution_gentables.o’,
+      ‘absl/flags/parse.o’
+  Found ‘abort’, possibly from ‘abort’ (C)
+    Objects: ‘absl/base/internal/sysinfo.o’,
+      ‘absl/base/internal/raw_logging.o’, ‘absl/debugging/symbolize.o’
+  Found ‘exit’, possibly from ‘exit’ (C)
+    Objects: ‘absl/flags/internal/registry.o’, ‘absl/flags/usage.o’,
+      ‘absl/flags/parse.o’
+
+Compiled code should not call entry points which might terminate R nor
+write to stdout/stderr instead of to the console, nor use Fortran I/O
+nor system RNGs.
+
+See ‘Writing portable packages’ in the ‘Writing R Extensions’ manual.
+* checking examples ... OK
+* checking PDF version of manual ... WARNING
+LaTeX errors when creating PDF version.
+This typically indicates Rd problems.
+* checking PDF version of manual without hyperrefs or index ... ERROR
+Re-running with no redirection of stdout/stderr.
+* DONE
+Status: 1 ERROR, 3 WARNINGs, 2 NOTEs
