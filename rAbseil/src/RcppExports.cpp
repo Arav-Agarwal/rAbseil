@@ -15,13 +15,3 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-
-static const R_CallMethodDef CallEntries[] = {
-    {"_rAbseil_rcpp_hello_world", (DL_FUNC) &_rAbseil_rcpp_hello_world, 0},
-    {NULL, NULL, 0}
-};
-
-RcppExport void R_init_rAbseil(DllInfo *dll) {
-    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
-    R_useDynamicSymbols(dll, FALSE);
-}
