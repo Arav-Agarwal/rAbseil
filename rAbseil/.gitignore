@@ -1,0 +1,9 @@
+*.Rcheck
+*.tar.gz
+*.so
+*.o
+.local
+src-*
+./rAbseil_*
+.Rproj.user
+.DS_Store
